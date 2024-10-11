@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HR:wght@100..400&display=swap');
+* {
+  font-family: "Playwrite HR", cursive;
+}
+
+/* 
+descendant selector (space)
+child selector (>)
+adjacent selector(+)
+general sibling delector(~) 
+*/
+
+/* descendant selector (space) */
+/* div p{
+  font-size: 30px;
+  background-color: aqua;
+  color: red;
+
+} */
+
+
+/* child selector (>) */
+/* div > p {
+  font-size: 30px;
+  background-color: aqua;
+  color: red;
+} */
+
+
+/* adjacent selector(+) */
+/* div + p {
+  font-size: 30px;
+  background-color: aqua;
+  color: red;
+} */
+
+
+/* general sibling delector(~) */
+
+div ~ p {
+  font-size: 30px;
+  background-color: aqua;
+  color: red;
+  
+}
+div i {
+  font-size: 50px;
+}
+ div .face{
+  color: 	rgb(24, 119, 242);
+ }
+ div .linke {
+  color: #0077B5;
+ }
+ div .git{
+  color: #2b3137;
+ }
