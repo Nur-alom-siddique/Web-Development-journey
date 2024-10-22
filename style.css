@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+.container {
+  width: 960px;
+  margin: 0 auto;
+
+}
+.box {
+  width: 200px;
+  height: 200px;
+  border: 2px solid red;
+  margin: 100px auto;
+  position: relative;
+}
+
+
+.box::before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  /* inline tag er moto : tai vitore content na tag k block tag banate hobe */
+  /* display: inline-block; */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: all ease .4s;
+
+}
+.box:hover::before {
+  width: 200px;
+  height: 200px;
+}
+.main-menu {
+  display: flex;
+  margin: 100px auto;
+}
+.main-menu li a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+  padding: 10px 30px;
+}
+
+.main-menu li a::before {
+  content: '';
+  width: 0px;
+  height: 5px;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: all ease .3s;
+}
+
+.main-menu li a:hover::before {
+  width: 100%;
+  /* background-color: red; */
+}
+
+
+/* .practice li:first-child {
+  background-color: red;
+}
+.practice li:last-child{
+  background-color: green;
+}
+.practice li:nth-child(5){
+  background-color: blueviolet;
+} */
+
+/* .practice li:nth-child(2n) {
+  background-color: red;
+} */
+ .practice li:nth-child(2n -1 ) {
+  background-color: red;
+}
+
+
+
+/* .box .small-box {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+
+} */
+
+/* ul li::before {
+  content: 'Md: ';
+}
+ul li::after {
+  content: ' Saheb';
+} */
+
+
+.animation-parent {
+  width: 600px;
+  height: 600px;
+  border: 50px solid green;
+  margin: 100px auto;
+  position: relative;
+}
+/* .animation-box {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(242, 6, 132);
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation-name: nur-alom;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; */
+  /* animation-direction: alternate-reversef; */
+
+/* } */
+
+.animation-box {
+  width: 150px;
+  height: 150px;
+  /* background-color: red; */
+  background-image: url(Screenshot\ \(14\).png);
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: rotate(0);
+  animation-name: nur-alom;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 5s;
+}
+
+/* transform */
+ @keyframes nur-alom {
+  from{
+   transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+
+ }
+
+
+/* @keyframes Nur-alom{
+  from{
+    left: 0;
+    top: 0;
+  }
+  to {
+    left: 550px;
+    top: 0;
+  }
+} */
+
+
+/* @keyframes nur-alom {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: 550px;
+    top: 0;
+  }
+  50% {
+    left: 550px;
+    top: 550px;
+  }
+  75% {
+left: 0;
+top: 550px;
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+} */
